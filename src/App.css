@@ -1,0 +1,104 @@
+.clock-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock-title {
+    margin: 0 0 15px 0;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.clock-remove-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #aaa;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.clock-remove-btn:hover {
+    color: #dc3545;
+}
+
+/* CIRCULAR DIAL */
+.analog-clock {
+    width: 120px;
+    height: 120px;
+    border: 8px solid #502f09;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fafafa;
+}
+
+/* Common base for all hands */
+.hand {
+    position: absolute;
+    bottom: 50%;
+    /* They are positioned in the upper half of the clock face */
+    left: 50%;
+    transform-origin: bottom center;
+    /* They rotate using the bottom base as an axis */
+    border-radius: 4px;
+}
+
+/* Hour Hand: Short and thick */
+.hour-hand {
+    width: 4px;
+    height: 35px;
+    background-color: #333;
+    margin-left: -2px;
+    /* Exact horizontal centering */
+}
+
+/* Minute Hand: Long and medium-sized */
+.minute-hand {
+    width: 3px;
+    height: 48px;
+    background-color: #666;
+    margin-left: -1.5px;
+}
+
+/* Seconds hand: Slim and in a striking color */
+.second-hand {
+    width: 1.5px;
+    height: 52px;
+    background-color: #e74c3c;
+    margin-left: -0.75px;
+}
+
+/* The watch's central pin */
+.clock-center-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.clock-number {
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #555;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+}
