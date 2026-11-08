@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ra16-lifecycle-watches/',
+  base: '/ra16-homeworks-watches/',
 })
